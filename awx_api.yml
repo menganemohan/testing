@@ -1,0 +1,15 @@
+---
+- name: Testing awx playbook.
+  hosts: localhost
+  gather_facts: false
+  become: true
+
+
+  tasks:
+    - name: Testing
+      command: echo "welcome to AWX Tower"
+      register: test
+
+    - name: debug the test
+      debug:
+        msg: "{{ test.stdout_lines }}"  
