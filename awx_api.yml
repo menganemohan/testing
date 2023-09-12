@@ -7,6 +7,10 @@
   vars:
     extra_vars: "This is testing for vars"
 
+
+  vars:
+    extra_vars: "Hello World"
+
   tasks:
     - name: Testing
       command: echo "welcome to AWX Tower"
@@ -16,6 +20,12 @@
       debug:
         msg: "{{ test.stdout_lines }}"  
 
+
     - name: Debug the vars
       debug:
         msg: "{{ vars }}"
+
+    - name: "Ansible | Print a variable"
+      debug:
+        msg: "The operating system is {{ ansible_distribution }}"
+
