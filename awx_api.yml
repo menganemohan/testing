@@ -23,11 +23,11 @@
 
     - name: Debug the vars
       debug:
-        msg: "{{ vars }}"
+        msg: "{{ extra_vars }}"
 
     - name: "Ansible | Print a variable"
       debug:
-        msg: "The operating system is {{ vars }}"
+        msg: "The operating system is {{ extra_vars }}"
 
 
 
