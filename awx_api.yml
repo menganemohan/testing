@@ -18,4 +18,4 @@
 
     - name: Debug the extra_var
       debug:
-        var: extra_var
+        var: vars
