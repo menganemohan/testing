@@ -5,7 +5,7 @@
   become: true
 
   vars:
-    extra_vars: "{{ awx }}"
+    extra_vars: "Hello World"
 
   tasks:
     - name: Testing
