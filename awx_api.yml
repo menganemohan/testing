@@ -16,6 +16,6 @@
       debug:
         msg: "{{ test.stdout_lines }}"  
 
-    - name: Debug the extra_var
+    - name: "Ansible | Print a variable"
       debug:
-        var: vars
+        msg: "The operating system is {{ ansible_distribution }}"
