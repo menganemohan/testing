@@ -1,6 +1,6 @@
 ---
 - name: Testing awx playbook.
-  hosts: cmdb_ci
+  hosts: localhost
   gather_facts: false
   become: true
   
