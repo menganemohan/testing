@@ -1,6 +1,6 @@
 ---
 - name: Testing awx playbook.
-  hosts: localhost
+  hosts: "{{ short_description }}"
   gather_facts: false
   become: true
   
