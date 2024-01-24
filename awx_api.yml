@@ -1,6 +1,6 @@
 ---
 - name: Testing awx playbook.
-  hosts: "{{ short_description }}"
+  hosts: cmdb_ci
   gather_facts: false
   become: true
   
